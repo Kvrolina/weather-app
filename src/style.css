@@ -1,0 +1,92 @@
+h1,
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 20px;
+}
+input {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.teemp {
+  font-size: 23px;
+  color: black;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  font-family: "Ubuntu", sans-serif;
+  padding: 150px;
+  width: 44%;
+  margin: 50px auto;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 35px 40px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: bisque;
+  background-size: 100%;
+}
+
+.col-left {
+  position: relative;
+  top: 60px;
+}
+
+.col-right {
+  text-align: right;
+  position: relative;
+  top: 80px;
+  right: 23px;
+}
+
+.col-3 {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.week-img {
+  width: 70%;
+}
+
+.card {
+  padding-top: 10px;
+  margin-top: 140px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.week-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.week-temp {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#search-city,
+.btn.btn-outline-secondary.btn-light {
+  border-radius: 50px;
+}
