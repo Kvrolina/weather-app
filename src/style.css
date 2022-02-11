@@ -19,6 +19,22 @@ a {
   text-decoration: none;
 }
 
+.first-color {
+  background: #feffdf;
+}
+
+.second-color {
+  background: #dde0ab;
+}
+
+.third-color {
+  background: #97cba9;
+}
+
+.fourth-color {
+  background: #668ba4;
+}
+
 .list {
   list-style: none;
 }
@@ -41,8 +57,8 @@ a {
   border-radius: 10px;
   padding: 35px 40px;
   box-shadow: 5px 5px 5px grey;
-  background-color: bisque;
   background-size: 100%;
+  background-color: #feffdf;
 }
 
 .col-left {

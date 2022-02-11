@@ -11,12 +11,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/style.css">
+
   </head>
   <body>
     <div class="container">
@@ -24,38 +25,36 @@
       <div class="row">
         <div class="col">
            <form class="d-flex" id="city-search-form">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Enter a city name..."
-          aria-label="Search"
-          id="city-input"
-        />
-        <button class="btn btn-outline-dark" type="submit" id="search-button">Search</button>
-        <button type="button" id = "location-button" class="btn btn-outline-dark">&#128205;</button>
-      </form>
+                <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Enter a city name..."
+                aria-label="Search"
+                id="city-input"
+                />
+                <button class="btn btn-outline-dark" type="submit" id="search-button">Search</button>
+                <button type="button" id = "location-button" class="btn btn-outline-dark">&#128205;</button>
+             </form>
         </div>
       </div>
       
       <div class="row">
         <div class="col-left">         
     
-             <h1 id="name">
-              Bodengraven </h1>
+             <h1 id="name">Bodengraven </h1>
               <br>
               
               <h2>
-                  <span class="units">
-                    
-                  <span id="temperature">7</span><span class ="teemp"><a href="#" class="tempc" id="celcius">°C</a> | <a href="#" class="tempf" id="fahrenheit">°F</a></span>
-                </span>
+                    <span class="units">
+                        <span id="temperature">7</span><span class ="teemp"><a href="#" class="tempc" id="celcius">°C</a> | <a href="#" class="tempf" id="fahrenheit">°F</a></span>
+                    </span>
               <br>
               <lu class="list">
                   <div id= date> </div>
                   <li id = "weather-description"> Partly cloudy            
                   </li>
               </lu>
-            </p>
+            
           <div class="col-right">
            <h3>
               Feels like: 
@@ -120,7 +119,6 @@
             <span class = "week-temp">8°/3°</span>
         </div>
     </div>
-    <script src=""></script>
     <script src="src/index.js"></script>
   </body>
 </html>
