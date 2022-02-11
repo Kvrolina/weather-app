@@ -2,11 +2,11 @@ h1,
 h2 {
   text-align: center;
   margin: 0 auto;
-  font-size: 44px;
+  font-size: 50px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 input {
   display: block;
@@ -18,23 +18,24 @@ a {
   margin-bottom: 3px;
   text-decoration: none;
 }
-
-.first-color {
-  background: #feffdf;
+card {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  transition: 0.3s;
 }
 
-.second-color {
-  background: #dde0ab;
+.week-img {
+  background-color: rgba(0, 0, 0, 0);
 }
-
-.third-color {
-  background: #97cba9;
-}
-
-.fourth-color {
-  background: #668ba4;
-}
-
 .list {
   list-style: none;
 }
@@ -69,8 +70,9 @@ a {
 .col-right {
   text-align: right;
   position: relative;
-  top: 80px;
+  top: 105px;
   right: 23px;
+  font-size: 12px;
 }
 
 .col-3 {
@@ -105,4 +107,11 @@ a {
 #search-city,
 .btn.btn-outline-secondary.btn-light {
   border-radius: 50px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5.5rem; /* Footer height */
 }
