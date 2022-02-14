@@ -62,20 +62,31 @@ function showTemp(response) {
   document.querySelector("#current-wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function search(event) {
-  event.preventDefault();
-  let newCityName = document.querySelector("#name");
-  let newCity = document.querySelector("#city-input");
-  newCityName.innerHTML = `${newCity.value}`;
+function search(city) {
   let apiKey = "b6d339314ce6cb1eca41a2997d435c26";
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${newCity.value}&appid=${apiKey}&units=metric`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(url).then(showTemp);
 }
 
+function submit(event) {
+  event.preventDefault();
+  let newCity = document.querySelector("#city-input");
+  search(newCity.value);
+}
+
 let enterCity = document.querySelector("#city-search-form");
-enterCity.addEventListener("submit", search);
+enterCity.addEventListener("submit", submit);
 
 function currentLocation(position) {
   let latitude = position.coords.latitude;
