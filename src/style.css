@@ -1,30 +1,43 @@
-h1,
-h2 {
+body {
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
-  margin: 0 auto;
-  font-size: 50px;
 }
 
-h3 {
-  font-size: 1.1rem;
+ul {
+  margin: 50px 0;
+  padding: 0;
 }
-input {
+
+li {
+  list-style: none;
   display: block;
-  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 100;
 }
 
-a {
-  color: black;
-  margin-bottom: 3px;
-  text-decoration: none;
+.weatherapp {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #feffdf;
 }
-card {
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+.col-4 {
+  position: relative;
+  right: -260px;
 }
+
+.description {
+  margin-top: 60px;
+  margin-left: 126px;
+}
+#temperature {
+  font-size: 35px;
+}
+
 .card {
   padding-left: 20px;
   padding-right: 20px;
@@ -49,46 +62,6 @@ card {
   color: rgb(255, 255, 255);
 }
 
-.container {
-  font-family: "Ubuntu", sans-serif;
-  padding: 150px;
-  width: 44%;
-  margin: 50px auto;
-  border: 1px solid grey;
-  border-radius: 10px;
-  padding: 35px 40px;
-  box-shadow: 5px 5px 5px grey;
-  background-size: 100%;
-  background-color: #feffdf;
-}
-
-.col-left {
-  position: relative;
-  top: 60px;
-}
-
-.col-right {
-  text-align: right;
-  position: relative;
-  top: 105px;
-  right: 23px;
-}
-
-.col-3 {
-  display: block;
-  margin: 0 auto;
-  position: relative;
-}
-.week-img {
-  width: 70%;
-}
-
-.card {
-  padding-top: 10px;
-  margin-top: 140px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .card-body {
   text-align: center;
 }
@@ -96,6 +69,7 @@ card {
 .week-img {
   display: block;
   margin: 0 auto;
+  width: 70%;
 }
 
 .week-temp {
@@ -108,9 +82,6 @@ card {
   border-radius: 50px;
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 5.5rem; /* Footer height */
+.footer {
+  text-align: center;
 }
