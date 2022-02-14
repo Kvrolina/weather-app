@@ -11,7 +11,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,108 +24,100 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <form class="d-flex" id="city-search-form">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Enter a city name..."
-              aria-label="Search"
-              id="city-input"
-            />
-            <button
-              class="btn btn-outline-dark"
-              type="submit"
-              id="search-button"
-            >
-              Search
-            </button>
-            <button
-              type="button"
-              id="location-button"
-              class="btn btn-outline-dark"
-            >
-              &#128205;
-            </button>
-          </form>
-        </div>
-      </div>
-
-    <div class="row">
-        <div class="col-left">
-          <h1 id="name">Bodengraven</h1>
-          <h2>
-            <span class="units">
-              <span id="temperature">7</span
-              ><span class="teemp"
-                ><a href="#" class="tempc" id="celcius">°C</a> |
-                <a href="#" class="tempf" id="fahrenheit">°F</a></span
+      <div class="weatherapp">
+        <div class="row">
+          <div class="col">
+            <form class="d-flex" id="city-search-form">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Enter a city name..."
+                aria-label="Search"
+                id="city-input"
+              />
+              <button
+                class="btn btn-outline-dark"
+                type="submit"
+                id="search-button"
               >
-            </span>
-            <br />
-            <lu class="list">
-              <div id="date"></div>
-              <li id="weather-description">Partly cloudy</li>
-            </lu>
-          </h2>
+                Search
+              </button>
+              <button
+                type="button"
+                id="location-button"
+                class="btn btn-outline-dark"
+              >
+                &#128205;
+              </button>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <ul>
+                <li class="h1" id="name">Bodengraven</li>
+                <li>
+                  <img src="" alt="" /> <span id="temperature">7</span>
+                  <a href="#" class="tempc" id="celcius">°C</a> |
+                  <a href="#" class="tempf" id="fahrenheit">°F</a>
+                </li>
+                <li id="date">Friday 16:35</li>
+                <li id="weather-description">Partly cloudy</li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <ul class="description">
+                <li>Feels like:<span id="current-feels-like"> 3 </span></li>
+                <li>Humidity: <span id="current-humidity">93</span>%</li>
+                <li>Wind: <span id="current-wind">13</span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col week-weather">
+              <div class="card">
+                <div class="card-body"><strong>Mon</strong></div>
+                <img class="week-img" src="img/zon.png" />
+                <span class="week-temp">9°/4°</span>
+              </div>
+            </div>
+            <div class="col week-weather">
+              <div class="card">
+                <div class="card-body"><strong>Tue</strong></div>
+                <img class="week-img" src="img/wolk.png" />
+                <span class="week-temp">8°/4°</span>
+              </div>
+            </div>
+            <div class="col week-weather">
+              <div class="card">
+                <div class="card-body"><strong>Wed</strong></div>
+                <img class="week-img" src="img/onweer.png" />
+                <span class="week-temp">10°/5°</span>
+              </div>
+            </div>
+            <div class="col week-weather">
+              <div class="card">
+                <div class="card-body"><strong>Thu</strong></div>
+                <img class="week-img" src="img/wolk.png" />
+                <span class="week-temp">11°/5°</span>
+              </div>
+            </div>
+            <div class="col week-weather">
+              <div class="card">
+                <div class="card-body"><strong>Fri</strong></div>
+                <img class="week-img" src="img/zon-regen.png" />
+                <span class="week-temp">8°/3°</span>
+              </div>
+            </div>
         </div>
-      
-        <div class="col-right">
-            <h3>
-                Feels like:
-                <span id="current-feels-like"> 3 </span>
-                <br />
-                Humidity: <span id="current-humidity">93</span>%
-                <br />
-                Wind: <span id="current-wind">13</span> km/h
-            </h3>
-        </div>
+      </div>
     </div>
-
-    <div class="row">
-      <div class="col week-weather">
-        <div class="card">
-          <div class="card-body"><strong>Mon</strong></div>
-          <img class="week-img" src="img/zon.png" />
-          <span class="week-temp">9°/4°</span>
-        </div>
-      </div>
-      <div class="col week-weather">
-        <div class="card">
-          <div class="card-body"><strong>Tue</strong></div>
-          <img class="week-img" src="img/wolk.png" />
-          <span class="week-temp">8°/4°</span>
-        </div>
-      </div>
-      <div class="col week-weather">
-        <div class="card">
-          <div class="card-body"><strong>Wed</strong></div>
-          <img class="week-img" src="img/onweer.png" />
-          <span class="week-temp">10°/5°</span>
-        </div>
-      </div>
-      <div class="col week-weather">
-        <div class="card">
-          <div class="card-body"><strong>Thu</strong></div>
-          <img class="week-img" src="img/wolk.png" />
-          <span class="week-temp">11°/5°</span>
-        </div>
-      </div>
-      <div class="col week-weather">
-        <div class="card">
-          <div class="card-body"><strong>Fri</strong></div>
-          <img class="week-img" src="img/zon-regen.png" />
-          <span class="week-temp">8°/3°</span>
-        </div>
-      </div>
-      <footer id="footer">
+    <small id="footer">
         <a href="">Open-source code</a>, coded by Karolina Keczmerska
-      </footer>
-    </div>
+      </small>
     <script src="src/index.js"></script>
   </body>
 </html>
