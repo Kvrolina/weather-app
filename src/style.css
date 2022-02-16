@@ -14,11 +14,12 @@ li {
   text-align: center;
   font-size: 16px;
   font-weight: 100;
+  text-transform: capitalize;
 }
 
 .weatherapp {
   max-width: 800px;
-  margin: 80px auto;
+  margin: 50px auto 6px;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
@@ -34,47 +35,16 @@ li {
   margin-top: 60px;
   margin-left: 126px;
 }
+.weather-forecast {
+  margin: 10px 50px 10px;
+}
 #temperature {
   font-size: 35px;
 }
 
-.card {
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  transition: 0.3s;
-}
-
-.week-img {
-  background-color: rgba(0, 0, 0, 0);
-}
-.list {
-  list-style: none;
-}
-
-.teemp {
-  font-size: 23px;
-  color: black;
-}
-
-::placeholder {
-  color: rgb(255, 255, 255);
-}
-
-.card-body {
-  text-align: center;
-}
-
-.week-img {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-}
-
-.week-temp {
-  text-align: center;
-  margin-top: 15px;
+.weather-forecast-temperature-min {
+  font-size: smaller;
+  opacity: 0.7;
 }
 
 #search-city,

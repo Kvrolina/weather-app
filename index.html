@@ -28,97 +28,69 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherapp">
-        <div class="row">
-          <div class="col">
-            <form class="d-flex" id="city-search-form">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Enter a city name..."
-                aria-label="Search"
-                id="city-input"
-              />
-              <button
-                class="btn btn-outline-dark"
-                type="submit"
-                id="search-button"
-              >
-                Search
-              </button>
-              <button
-                type="button"
-                id="location-button"
-                class="btn btn-outline-dark"
-              >
-                &#128205;
-              </button>
-            </form>
-          </div>
+      <div class="weather-app-wrapper">
+        <div class="weatherapp">
           <div class="row">
-            <div class="col-4">
-              <ul>
-                <li class="h1" id="name">Amsterdam</li>
-                                  
-                <li>
-                  <img src="https://openweathermap.org/img/wn/02n@2x.png" alt="Clear" id="icon" /> <span id="temperature">7</span>
-                  <a href="#" class="tempc" id="celcius">°C</a> |
-                  <a href="#" class="tempf" id="fahrenheit">°F</a>
-                </li>
-                <li id="date">Friday 16:35</li>
-                <li id="weather-description">Partly cloudy</li>
-              </ul>
+            <div class="col">
+              <form class="d-flex" id="city-search-form">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Enter a city name..."
+                  aria-label="Search"
+                  id="city-input"
+                />
+                <button
+                  class="btn btn-outline-dark"
+                  type="submit"
+                  id="search-button"
+                >
+                  Search
+                </button>
+                <button
+                  type="button"
+                  id="location-button"
+                  class="btn btn-outline-dark"
+                >
+                  &#128205;
+                </button>
+              </form>
             </div>
-            <div class="col-4">
-              <ul class="description">
-                <li>Feels like:<span id="current-feels-like"> 3 </span></li>
-                <li>Humidity: <span id="current-humidity">93</span>%</li>
-                <li>Wind: <span id="current-wind">13</span> km/h</li>
-              </ul>
+            <div class="row">
+              <div class="col-4">
+                <ul>
+                  <li class="h1" id="name">Amsterdam</li>
+
+                  <li>
+                    <img
+                      src="https://openweathermap.org/img/wn/02n@2x.png"
+                      alt="Clear"
+                      id="icon"
+                    />
+                    <span id="temperature">7</span>
+                    <a href="#" class="tempc" id="celcius">°C</a> |
+                    <a href="#" class="tempf" id="fahrenheit">°F</a>
+                  </li>
+                  <li id="date">Friday 16:35</li>
+                  <li id="weather-description">Partly cloudy</li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <ul class="description">
+                  <li>Feels like:<span id="current-feels-like"> 3 </span></li>
+                  <li>Humidity: <span id="current-humidity">93</span>%</li>
+                  <li>Wind: <span id="current-wind">13</span> km/h</li>
+                </ul>
+              </div>
             </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
-          <div class="row">
-            <div class="col week-weather">
-              <div class="card">
-                <div class="card-body"><strong>Mon</strong></div>
-                <img class="week-img" src="img/zon.png" />
-                <span class="week-temp">9°/4°</span>
-              </div>
-            </div>
-            <div class="col week-weather">
-              <div class="card">
-                <div class="card-body"><strong>Tue</strong></div>
-                <img class="week-img" src="img/wolk.png" />
-                <span class="week-temp">8°/4°</span>
-              </div>
-            </div>
-            <div class="col week-weather">
-              <div class="card">
-                <div class="card-body"><strong>Wed</strong></div>
-                <img class="week-img" src="img/onweer.png" />
-                <span class="week-temp">10°/5°</span>
-              </div>
-            </div>
-            <div class="col week-weather">
-              <div class="card">
-                <div class="card-body"><strong>Thu</strong></div>
-                <img class="week-img" src="img/wolk.png" />
-                <span class="week-temp">11°/5°</span>
-              </div>
-            </div>
-            <div class="col week-weather">
-              <div class="card">
-                <div class="card-body"><strong>Fri</strong></div>
-                <img class="week-img" src="img/zon-regen.png" />
-                <span class="week-temp">8°/3°</span>
-              </div>
-            </div>
         </div>
+        <small id="footer">
+          <a href="">Open-source code</a>, coded by Karolina Keczmerska
+        </small>
       </div>
     </div>
-    <small id="footer">
-        <a href="">Open-source code</a>, coded by Karolina Keczmerska
-      </small>
     <script src="src/index.js"></script>
   </body>
 </html>
