@@ -1,6 +1,7 @@
 body {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
+  font-style: italic;
 }
 
 ul {
@@ -12,11 +13,31 @@ li {
   list-style: none;
   display: block;
   text-align: center;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 100;
   text-transform: capitalize;
 }
 
+h3 {
+  line-height: 20px;
+  margin-top: 39px;
+  position: relative;
+  left: 60px;
+  top: 170px;
+}
+
+.h1 {
+  margin-bottom: 0;
+}
+
+.col {
+  margin-left: 20px;
+}
+.description {
+  font-size: 15px;
+  font-weight: 550;
+  opacity: 0.7;
+}
 .weatherapp {
   max-width: 800px;
   margin: 50px auto 6px;
@@ -24,19 +45,23 @@ li {
   border: 1px solid #dadde1;
   border-radius: 5px;
   box-shadow: 5px 5px 5px grey;
-  background-color: #feffdf;
-}
-.col-4 {
-  position: relative;
-  right: -260px;
-}
-
-.description {
-  margin-top: 60px;
-  margin-left: 126px;
+  background-color: #f7f5f5a6;
 }
 .weather-forecast {
-  margin: 10px 50px 10px;
+  margin-bottom: 20px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.units {
+  position: relative;
+  bottom: 10px;
+}
+.weather-forecast-date {
+  font-weight: 700;
 }
 #temperature {
   font-size: 35px;
@@ -52,6 +77,11 @@ li {
   border-radius: 50px;
 }
 
-.footer {
-  text-align: center;
+.bi.bi-github {
+  font-size: 20px;
+}
+
+.bi.bi-github:hover {
+  cursor: pointer;
+  font-size: 28px;
 }

@@ -5,25 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -57,10 +46,9 @@
               </form>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div class="col align-self-center">
                 <ul>
                   <li class="h1" id="name">Amsterdam</li>
-
                   <li>
                     <img
                       src="https://openweathermap.org/img/wn/02n@2x.png"
@@ -68,26 +56,21 @@
                       id="icon"
                     />
                     <span id="temperature">7</span>
+                    <span class="units">
                     <a href="#" class="tempc" id="celcius">°C</a> |
                     <a href="#" class="tempf" id="fahrenheit">°F</a>
+                    </span>
                   </li>
                   <li id="date">Friday 16:35</li>
                   <li id="weather-description">Partly cloudy</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="description">
-                  <li>Feels like:<span id="current-feels-like"> 3 </span></li>
-                  <li>Humidity: <span id="current-humidity">93</span>%</li>
-                  <li>Wind: <span id="current-wind">13</span> km/h</li>
-                </ul>
+                  <li class="description" ><i class="bi bi-droplet-fill"><span id="current-humidity"> </span>%</i>  <i class="bi bi-wind"><span id="current-wind"> </span> km/h</i></li>
               </div>
             </div>
             <div class="weather-forecast" id="forecast"></div>
           </div>
         </div>
         <small id="footer">
-          <a href="">Open-source code</a>, coded by Karolina Keczmerska
+          <a href="https://github.com/Kvrolina/weather-app"><i class="bi bi-github" ></i></a> coded by Karolina Keczmerska
         </small>
       </div>
     </div>
