@@ -22,26 +22,6 @@ let date = now.getDate();
 let currentTime = document.querySelector("#date");
 currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 
-function cToc(event) {
-  event.preventDefault();
-  document.querySelector("#temperature").innerHTML = Math.round(
-    ((42.8 - 32) * 5) / 9
-  );
-}
-
-let linkC = document.querySelector(".tempc");
-linkC.addEventListener("click", cToc);
-
-function cTof(event) {
-  event.preventDefault();
-  document.querySelector("#temperature").innerHTML = Math.round(
-    (6 * 9) / 5 + 32
-  );
-}
-
-let linkF = document.querySelector(".tempf");
-linkF.addEventListener("click", cTof);
-
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "b6d339314ce6cb1eca41a2997d435c26";
@@ -133,8 +113,11 @@ function displayForecast(response) {
                     forecastDay.weather[0].icon
                   }@2x.png"
                   alt=""
-                  width="42"
+                  width="64"
                 />
+                <div class="future-temp-desc">${
+                  forecastDay.weather[0].description
+                }</div>
                 <div class="weather-forecast-temperatures">
                   <span class="weather-forecast-temperature-max">${Math.round(
                     forecastDay.temp.max

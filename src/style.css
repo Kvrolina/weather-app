@@ -39,13 +39,14 @@ h3 {
   opacity: 0.7;
 }
 .weatherapp {
+  background: repeating-linear-gradient(#fbefcc, 46%, #b7d7e8);
+  color: rgba(43, 36, 36, 0.795);
   max-width: 800px;
   margin: 50px auto 6px;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
   box-shadow: 5px 5px 5px grey;
-  background-color: #f7f5f5a6;
 }
 .weather-forecast {
   margin-bottom: 20px;
@@ -61,15 +62,26 @@ a:link {
   bottom: 10px;
 }
 .weather-forecast-date {
+  font-size: 17px;
   font-weight: 700;
 }
+
+.future-temp-desc {
+  font-size: 11px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
 #temperature {
   font-size: 35px;
 }
 
 .weather-forecast-temperature-min {
   font-size: smaller;
-  opacity: 0.7;
+  opacity: 0.9;
+  position: relative;
+  top: 2px;
 }
 
 #search-city,
