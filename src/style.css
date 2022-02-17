@@ -39,7 +39,7 @@ h3 {
   opacity: 0.7;
 }
 .weatherapp {
-  background: repeating-linear-gradient(#f9ccac, 40%, #b7d7e8);
+  background: repeating-linear-gradient(#fbefcc, 46%, #b7d7e8);
   color: rgba(43, 36, 36, 0.795);
   max-width: 800px;
   margin: 50px auto 6px;
@@ -47,6 +47,9 @@ h3 {
   border: 1px solid #dadde1;
   border-radius: 5px;
   box-shadow: 5px 5px 5px grey;
+}
+.form-control.me-2 {
+  background-color: rgb(251, 239, 204, 0.2);
 }
 .weather-forecast {
   margin-bottom: 20px;
